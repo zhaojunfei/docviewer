@@ -41,7 +41,7 @@ public abstract class AbstractJdbcSupport {
             throw new NamingException();
         }
         MysqlDataSource dataSource = new MysqlDataSource();
-        dataSource.setURL("jdbc:mysql://localhost:3306/docviewerDB?user=root&autoReconnect=true&useUnicode=true&amp;characterEncoding=UTF-8");
+        dataSource.setURL("jdbc:mysql://localhost:3306/docviewerDB?user=root&password=9fc26c8c81&autoReconnect=true&useUnicode=true&amp;characterEncoding=UTF-8");
         return dataSource;
     }
 

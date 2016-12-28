@@ -15,6 +15,11 @@ import java.util.Map;
  * @author 张立鑫 IntelligentCode
  * @date: 12-1-23
  * @time: 上午2:37
+ * create table DocumentRelation(
+id int auto_increment primary key,
+filename varchar(255) not null,
+location varchar(2000) not null,
+createDate timestamp not null);
  */
 public class DocumentRelationDao extends DocViewerJdbcSupport implements IDocumentRelationDao {
     public void save(DocumentRelation relation) throws NamingException, SQLException {
